@@ -1,11 +1,7 @@
 import databases
 import sqlalchemy
 
-
-postgres_dsn = (
-    "postgresql://meta_db_user:meta_db_password@localhost:5432/db"
-)
+postgres_dsn = "postgresql://meta_db_user:meta_db_password@localhost:5432/db"
 
 metadata = sqlalchemy.MetaData()
 database = databases.Database(postgres_dsn)
-# engine = sqlalchemy.create_engine(postgres_dsn)
